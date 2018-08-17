@@ -47,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		F0D3DE442127064D0078232F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		F0D3DE46212707DB0078232F /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
 		F0FBAE442127028700902397 /* Future.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Future.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0FBAE472127028700902397 /* Future.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Future.h; sourceTree = "<group>"; };
 		F0FBAE482127028700902397 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -246,6 +247,7 @@
 		F0FBAEA52127062100902397 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F0D3DE46212707DB0078232F /* LICENSE */,
 				F0D3DE442127064D0078232F /* README.md */,
 			);
 			name = "Supporting Files";
