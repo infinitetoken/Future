@@ -8,8 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		F0FBAE4E2127028700902397 /* Future.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0FBAE442127028700902397 /* Future.framework */; };
-		F0FBAE532127028700902397 /* FutureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FBAE522127028700902397 /* FutureTests.swift */; };
 		F0FBAE552127028700902397 /* Future.h in Headers */ = {isa = PBXBuildFile; fileRef = F0FBAE472127028700902397 /* Future.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0FBAE632127030D00902397 /* Future.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FBAE622127030D00902397 /* Future.swift */; };
+		F0FBAE722127033400902397 /* Future.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0FBAE692127033400902397 /* Future.framework */; };
+		F0FBAE792127033400902397 /* FutureMobile.h in Headers */ = {isa = PBXBuildFile; fileRef = F0FBAE6B2127033400902397 /* FutureMobile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0FBAE8E2127034000902397 /* Future.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0FBAE852127034000902397 /* Future.framework */; };
+		F0FBAE952127034000902397 /* FutureTV.h in Headers */ = {isa = PBXBuildFile; fileRef = F0FBAE872127034000902397 /* FutureTV.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0FBAE9C2127039A00902397 /* Future.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FBAE622127030D00902397 /* Future.swift */; };
+		F0FBAE9D2127039A00902397 /* Future.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FBAE622127030D00902397 /* Future.swift */; };
+		F0FBAE9F2127044D00902397 /* FutureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FBAE9E2127044D00902397 /* FutureTests.swift */; };
+		F0FBAEA02127044D00902397 /* FutureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FBAE9E2127044D00902397 /* FutureTests.swift */; };
+		F0FBAEA12127044D00902397 /* FutureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FBAE9E2127044D00902397 /* FutureTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -20,6 +29,20 @@
 			remoteGlobalIDString = F0FBAE432127028700902397;
 			remoteInfo = Future;
 		};
+		F0FBAE732127033400902397 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0FBAE3B2127028700902397 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0FBAE682127033400902397;
+			remoteInfo = FutureMobile;
+		};
+		F0FBAE8F2127034000902397 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0FBAE3B2127028700902397 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0FBAE842127034000902397;
+			remoteInfo = FutureTV;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +50,19 @@
 		F0FBAE472127028700902397 /* Future.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Future.h; sourceTree = "<group>"; };
 		F0FBAE482127028700902397 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0FBAE4D2127028700902397 /* FutureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FutureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F0FBAE522127028700902397 /* FutureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FutureTests.swift; sourceTree = "<group>"; };
 		F0FBAE542127028700902397 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0FBAE622127030D00902397 /* Future.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Future.swift; sourceTree = "<group>"; };
+		F0FBAE692127033400902397 /* Future.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Future.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0FBAE6B2127033400902397 /* FutureMobile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FutureMobile.h; sourceTree = "<group>"; };
+		F0FBAE6C2127033400902397 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0FBAE712127033400902397 /* FutureMobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FutureMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0FBAE782127033400902397 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0FBAE852127034000902397 /* Future.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Future.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0FBAE872127034000902397 /* FutureTV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FutureTV.h; sourceTree = "<group>"; };
+		F0FBAE882127034000902397 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0FBAE8D2127034000902397 /* FutureTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FutureTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0FBAE942127034000902397 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0FBAE9E2127044D00902397 /* FutureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FutureTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,14 +81,50 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F0FBAE652127033400902397 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0FBAE6E2127033400902397 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0FBAE722127033400902397 /* Future.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0FBAE812127034000902397 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0FBAE8A2127034000902397 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0FBAE8E2127034000902397 /* Future.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		F0FBAE3A2127028700902397 = {
 			isa = PBXGroup;
 			children = (
+				F0FBAE60212702D200902397 /* FutureShared */,
 				F0FBAE462127028700902397 /* Future */,
+				F0FBAE6A2127033400902397 /* FutureMobile */,
+				F0FBAE862127034000902397 /* FutureTV */,
+				F0FBAE61212702E200902397 /* FutureTestsShared */,
 				F0FBAE512127028700902397 /* FutureTests */,
+				F0FBAE752127033400902397 /* FutureMobileTests */,
+				F0FBAE912127034000902397 /* FutureTVTests */,
 				F0FBAE452127028700902397 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +134,10 @@
 			children = (
 				F0FBAE442127028700902397 /* Future.framework */,
 				F0FBAE4D2127028700902397 /* FutureTests.xctest */,
+				F0FBAE692127033400902397 /* Future.framework */,
+				F0FBAE712127033400902397 /* FutureMobileTests.xctest */,
+				F0FBAE852127034000902397 /* Future.framework */,
+				F0FBAE8D2127034000902397 /* FutureTVTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,8 +145,7 @@
 		F0FBAE462127028700902397 /* Future */ = {
 			isa = PBXGroup;
 			children = (
-				F0FBAE472127028700902397 /* Future.h */,
-				F0FBAE482127028700902397 /* Info.plist */,
+				F0FBAE5E212702A300902397 /* Supporting Files */,
 			);
 			path = Future;
 			sourceTree = "<group>";
@@ -80,10 +153,92 @@
 		F0FBAE512127028700902397 /* FutureTests */ = {
 			isa = PBXGroup;
 			children = (
-				F0FBAE522127028700902397 /* FutureTests.swift */,
-				F0FBAE542127028700902397 /* Info.plist */,
+				F0FBAE5F212702BA00902397 /* Supporting Files */,
 			);
 			path = FutureTests;
+			sourceTree = "<group>";
+		};
+		F0FBAE5E212702A300902397 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F0FBAE472127028700902397 /* Future.h */,
+				F0FBAE482127028700902397 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F0FBAE5F212702BA00902397 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F0FBAE542127028700902397 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F0FBAE60212702D200902397 /* FutureShared */ = {
+			isa = PBXGroup;
+			children = (
+				F0FBAE622127030D00902397 /* Future.swift */,
+			);
+			path = FutureShared;
+			sourceTree = "<group>";
+		};
+		F0FBAE61212702E200902397 /* FutureTestsShared */ = {
+			isa = PBXGroup;
+			children = (
+				F0FBAE9E2127044D00902397 /* FutureTests.swift */,
+			);
+			path = FutureTestsShared;
+			sourceTree = "<group>";
+		};
+		F0FBAE6A2127033400902397 /* FutureMobile */ = {
+			isa = PBXGroup;
+			children = (
+				F0FBAEA22127046E00902397 /* Supporting Files */,
+			);
+			path = FutureMobile;
+			sourceTree = "<group>";
+		};
+		F0FBAE752127033400902397 /* FutureMobileTests */ = {
+			isa = PBXGroup;
+			children = (
+				F0FBAE782127033400902397 /* Info.plist */,
+			);
+			path = FutureMobileTests;
+			sourceTree = "<group>";
+		};
+		F0FBAE862127034000902397 /* FutureTV */ = {
+			isa = PBXGroup;
+			children = (
+				F0FBAEA32127048000902397 /* Supporting Files */,
+			);
+			path = FutureTV;
+			sourceTree = "<group>";
+		};
+		F0FBAE912127034000902397 /* FutureTVTests */ = {
+			isa = PBXGroup;
+			children = (
+				F0FBAE942127034000902397 /* Info.plist */,
+			);
+			path = FutureTVTests;
+			sourceTree = "<group>";
+		};
+		F0FBAEA22127046E00902397 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F0FBAE6B2127033400902397 /* FutureMobile.h */,
+				F0FBAE6C2127033400902397 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F0FBAEA32127048000902397 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F0FBAE872127034000902397 /* FutureTV.h */,
+				F0FBAE882127034000902397 /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,6 +249,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0FBAE552127028700902397 /* Future.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0FBAE662127033400902397 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0FBAE792127033400902397 /* FutureMobile.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0FBAE822127034000902397 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0FBAE952127034000902397 /* FutureTV.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +307,78 @@
 			productReference = F0FBAE4D2127028700902397 /* FutureTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		F0FBAE682127033400902397 /* FutureMobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0FBAE7A2127033400902397 /* Build configuration list for PBXNativeTarget "FutureMobile" */;
+			buildPhases = (
+				F0FBAE642127033400902397 /* Sources */,
+				F0FBAE652127033400902397 /* Frameworks */,
+				F0FBAE662127033400902397 /* Headers */,
+				F0FBAE672127033400902397 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FutureMobile;
+			productName = FutureMobile;
+			productReference = F0FBAE692127033400902397 /* Future.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F0FBAE702127033400902397 /* FutureMobileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0FBAE7D2127033400902397 /* Build configuration list for PBXNativeTarget "FutureMobileTests" */;
+			buildPhases = (
+				F0FBAE6D2127033400902397 /* Sources */,
+				F0FBAE6E2127033400902397 /* Frameworks */,
+				F0FBAE6F2127033400902397 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0FBAE742127033400902397 /* PBXTargetDependency */,
+			);
+			name = FutureMobileTests;
+			productName = FutureMobileTests;
+			productReference = F0FBAE712127033400902397 /* FutureMobileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F0FBAE842127034000902397 /* FutureTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0FBAE962127034000902397 /* Build configuration list for PBXNativeTarget "FutureTV" */;
+			buildPhases = (
+				F0FBAE802127034000902397 /* Sources */,
+				F0FBAE812127034000902397 /* Frameworks */,
+				F0FBAE822127034000902397 /* Headers */,
+				F0FBAE832127034000902397 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FutureTV;
+			productName = FutureTV;
+			productReference = F0FBAE852127034000902397 /* Future.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F0FBAE8C2127034000902397 /* FutureTVTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0FBAE992127034000902397 /* Build configuration list for PBXNativeTarget "FutureTVTests" */;
+			buildPhases = (
+				F0FBAE892127034000902397 /* Sources */,
+				F0FBAE8A2127034000902397 /* Frameworks */,
+				F0FBAE8B2127034000902397 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0FBAE902127034000902397 /* PBXTargetDependency */,
+			);
+			name = FutureTVTests;
+			productName = FutureTVTests;
+			productReference = F0FBAE8D2127034000902397 /* FutureTVTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -148,8 +391,22 @@
 				TargetAttributes = {
 					F0FBAE432127028700902397 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 					F0FBAE4C2127028700902397 = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
+					};
+					F0FBAE682127033400902397 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					F0FBAE702127033400902397 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					F0FBAE842127034000902397 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					F0FBAE8C2127034000902397 = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
 				};
@@ -168,6 +425,10 @@
 			targets = (
 				F0FBAE432127028700902397 /* Future */,
 				F0FBAE4C2127028700902397 /* FutureTests */,
+				F0FBAE682127033400902397 /* FutureMobile */,
+				F0FBAE702127033400902397 /* FutureMobileTests */,
+				F0FBAE842127034000902397 /* FutureTV */,
+				F0FBAE8C2127034000902397 /* FutureTVTests */,
 			);
 		};
 /* End PBXProject section */
@@ -187,6 +448,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F0FBAE672127033400902397 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0FBAE6F2127033400902397 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0FBAE832127034000902397 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0FBAE8B2127034000902397 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -194,6 +483,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0FBAE632127030D00902397 /* Future.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +491,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0FBAE532127028700902397 /* FutureTests.swift in Sources */,
+				F0FBAE9F2127044D00902397 /* FutureTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0FBAE642127033400902397 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0FBAE9C2127039A00902397 /* Future.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0FBAE6D2127033400902397 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0FBAEA02127044D00902397 /* FutureTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0FBAE802127034000902397 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0FBAE9D2127039A00902397 /* Future.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0FBAE892127034000902397 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0FBAEA12127044D00902397 /* FutureTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +534,16 @@
 			isa = PBXTargetDependency;
 			target = F0FBAE432127028700902397 /* Future */;
 			targetProxy = F0FBAE4F2127028700902397 /* PBXContainerItemProxy */;
+		};
+		F0FBAE742127033400902397 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0FBAE682127033400902397 /* FutureMobile */;
+			targetProxy = F0FBAE732127033400902397 /* PBXContainerItemProxy */;
+		};
+		F0FBAE902127034000902397 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0FBAE842127034000902397 /* FutureTV */;
+			targetProxy = F0FBAE8F2127034000902397 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -338,6 +670,7 @@
 		F0FBAE592127028700902397 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -357,6 +690,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.acwrightdesign.Future;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -364,6 +698,7 @@
 		F0FBAE5A2127028700902397 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -390,6 +725,29 @@
 		F0FBAE5C2127028700902397 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = RLF8EEWY2Z;
+				INFOPLIST_FILE = FutureTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.acwrightdesign.FutureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		F0FBAE5D2127028700902397 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = RLF8EEWY2Z;
@@ -403,23 +761,207 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
-			name = Debug;
+			name = Release;
 		};
-		F0FBAE5D2127028700902397 /* Release */ = {
+		F0FBAE7B2127033400902397 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = RLF8EEWY2Z;
-				INFOPLIST_FILE = FutureTests/Info.plist;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FutureMobile/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.acwrightdesign.FutureTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.acwrightdesign.FutureMobile;
+				PRODUCT_NAME = Future;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F0FBAE7C2127033400902397 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = RLF8EEWY2Z;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FutureMobile/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.acwrightdesign.FutureMobile;
+				PRODUCT_NAME = Future;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F0FBAE7E2127033400902397 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RLF8EEWY2Z;
+				INFOPLIST_FILE = FutureMobileTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.acwrightdesign.FutureMobileTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F0FBAE7F2127033400902397 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RLF8EEWY2Z;
+				INFOPLIST_FILE = FutureMobileTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.acwrightdesign.FutureMobileTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F0FBAE972127034000902397 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = RLF8EEWY2Z;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FutureTV/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.acwrightdesign.FutureTV;
+				PRODUCT_NAME = Future;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.4;
+			};
+			name = Debug;
+		};
+		F0FBAE982127034000902397 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = RLF8EEWY2Z;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FutureTV/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.acwrightdesign.FutureTV;
+				PRODUCT_NAME = Future;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.4;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F0FBAE9A2127034000902397 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RLF8EEWY2Z;
+				INFOPLIST_FILE = FutureTVTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.acwrightdesign.FutureTVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.4;
+			};
+			name = Debug;
+		};
+		F0FBAE9B2127034000902397 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RLF8EEWY2Z;
+				INFOPLIST_FILE = FutureTVTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.acwrightdesign.FutureTVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.4;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -449,6 +991,42 @@
 			buildConfigurations = (
 				F0FBAE5C2127028700902397 /* Debug */,
 				F0FBAE5D2127028700902397 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0FBAE7A2127033400902397 /* Build configuration list for PBXNativeTarget "FutureMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0FBAE7B2127033400902397 /* Debug */,
+				F0FBAE7C2127033400902397 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0FBAE7D2127033400902397 /* Build configuration list for PBXNativeTarget "FutureMobileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0FBAE7E2127033400902397 /* Debug */,
+				F0FBAE7F2127033400902397 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0FBAE962127034000902397 /* Build configuration list for PBXNativeTarget "FutureTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0FBAE972127034000902397 /* Debug */,
+				F0FBAE982127034000902397 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0FBAE992127034000902397 /* Build configuration list for PBXNativeTarget "FutureTVTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0FBAE9A2127034000902397 /* Debug */,
+				F0FBAE9B2127034000902397 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
