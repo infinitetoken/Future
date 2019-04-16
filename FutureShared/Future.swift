@@ -82,15 +82,17 @@ public struct Future<T> {
         }
     }
     
-    public func subscribe(_ onComplete: @escaping (T) -> Void = { _ in }, always: @escaping () -> Void = {}, _ onError: @escaping (Error) -> Void = { _ in }) {
+    public func subscribe(alwaysFirst: @escaping () -> Void = {}, success: @escaping (T) -> Void = { _ in }, onError: @escaping (Error) -> Void = { _ in }, alwaysLast: @escaping () -> Void = {}) {
+        alwaysFirst()
+        
         self.next { result in
             switch result {
-            case .success(let value): onComplete(value)
+            case .success(let value): success(value)
             case .failure(let error): onError(error)
             }
         }
         
-        always()
+        alwaysLast()
     }
     
 }

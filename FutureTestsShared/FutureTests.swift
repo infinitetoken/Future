@@ -44,37 +44,90 @@ class FutureTests: XCTestCase {
         wait(for: [expectation], timeout: 5.0)
     }
     
-    func testAlways() {
+    func testAlwaysFirst() {
         let future = Future<Int>(FutureTestError.error)
         
         let expectation = XCTestExpectation(description: "Future")
         
-        future.subscribe({ (value) in
-            XCTFail()
-        }, always: {
+        future.subscribe(alwaysFirst: {
             expectation.fulfill()
-        }) { (error) in
+        }, success: { (value) in
+            XCTFail()
+        }, onError: { (error) in
             
+        })
+        
+        wait(for: [expectation], timeout: 5.0)
+    }
+    
+    func testAlwaysLast() {
+        let future = Future<Int>(FutureTestError.error)
+        
+        let expectation = XCTestExpectation(description: "Future")
+        
+        future.subscribe(success: { (value) in
+            XCTFail()
+        }, onError: { (error) in
+            
+        }) {
+            expectation.fulfill()
         }
         
         wait(for: [expectation], timeout: 5.0)
     }
     
-    func testAlwaysTwo() {
-        let future = Future<Int>(1)
+    func testAlwaysFirstAndAlwaysLast() {
+        let future = Future<Int>(FutureTestError.error)
         
         let expectation = XCTestExpectation(description: "Future")
         
-        future.subscribe({ (value) in
-            XCTAssertEqual(value, 1)
-        }, always: {
-            expectation.fulfill()
-        }) { (error) in
+        var first = false
+        
+        future.subscribe(alwaysFirst: {
+            first = true
+        }, success: { (value) in
             XCTFail()
+        }, onError: { (error) in
+            
+        }) {
+            XCTAssert(first)
+            expectation.fulfill()
         }
         
         wait(for: [expectation], timeout: 5.0)
     }
+    
+//    func testAlways() {
+//        let future = Future<Int>(FutureTestError.error)
+//
+//        let expectation = XCTestExpectation(description: "Future")
+//
+//        future.subscribe({ (value) in
+//            XCTFail()
+//        }, always: {
+//            expectation.fulfill()
+//        }) { (error) in
+//
+//        }
+//
+//        wait(for: [expectation], timeout: 5.0)
+//    }
+//
+//    func testAlwaysTwo() {
+//        let future = Future<Int>(1)
+//
+//        let expectation = XCTestExpectation(description: "Future")
+//
+//        future.subscribe({ (value) in
+//            XCTAssertEqual(value, 1)
+//        }, always: {
+//            expectation.fulfill()
+//        }) { (error) in
+//            XCTFail()
+//        }
+//
+//        wait(for: [expectation], timeout: 5.0)
+//    }
     
     func testTransform() {
         let future = Future<String>("TEST")
