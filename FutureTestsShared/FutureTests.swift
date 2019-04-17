@@ -44,90 +44,21 @@ class FutureTests: XCTestCase {
         wait(for: [expectation], timeout: 5.0)
     }
     
-    func testAlwaysFirst() {
-        let future = Future<Int>(FutureTestError.error)
-        
+    func testAlways() {
+        let future = Future<Int>(1)
+
         let expectation = XCTestExpectation(description: "Future")
-        
-        future.subscribe(alwaysFirst: {
+
+        future.subscribe({ (value) in
+            XCTAssertEqual(value, 1)
+        }, { (error) in
+            XCTFail(error.localizedDescription)
+        }, always: {
             expectation.fulfill()
-        }, success: { (value) in
-            XCTFail()
-        }, onError: { (error) in
-            
         })
-        
+
         wait(for: [expectation], timeout: 5.0)
     }
-    
-    func testAlwaysLast() {
-        let future = Future<Int>(FutureTestError.error)
-        
-        let expectation = XCTestExpectation(description: "Future")
-        
-        future.subscribe(success: { (value) in
-            XCTFail()
-        }, onError: { (error) in
-            
-        }) {
-            expectation.fulfill()
-        }
-        
-        wait(for: [expectation], timeout: 5.0)
-    }
-    
-    func testAlwaysFirstAndAlwaysLast() {
-        let future = Future<Int>(FutureTestError.error)
-        
-        let expectation = XCTestExpectation(description: "Future")
-        
-        var first = false
-        
-        future.subscribe(alwaysFirst: {
-            first = true
-        }, success: { (value) in
-            XCTFail()
-        }, onError: { (error) in
-            
-        }) {
-            XCTAssert(first)
-            expectation.fulfill()
-        }
-        
-        wait(for: [expectation], timeout: 5.0)
-    }
-    
-//    func testAlways() {
-//        let future = Future<Int>(FutureTestError.error)
-//
-//        let expectation = XCTestExpectation(description: "Future")
-//
-//        future.subscribe({ (value) in
-//            XCTFail()
-//        }, always: {
-//            expectation.fulfill()
-//        }) { (error) in
-//
-//        }
-//
-//        wait(for: [expectation], timeout: 5.0)
-//    }
-//
-//    func testAlwaysTwo() {
-//        let future = Future<Int>(1)
-//
-//        let expectation = XCTestExpectation(description: "Future")
-//
-//        future.subscribe({ (value) in
-//            XCTAssertEqual(value, 1)
-//        }, always: {
-//            expectation.fulfill()
-//        }) { (error) in
-//            XCTFail()
-//        }
-//
-//        wait(for: [expectation], timeout: 5.0)
-//    }
     
     func testTransform() {
         let future = Future<String>("TEST")
@@ -191,14 +122,6 @@ class FutureTests: XCTestCase {
         }) { (error) in
             XCTFail(error.localizedDescription)
         }
-        
-        wait(for: [expectation], timeout: 5.0)
-    }
-    
-    func testConditionalThenTwo() {
-        let future = Future<String>("TEST")
-        
-        let expectation = XCTestExpectation(description: "Future")
         
         future.then(condition: false, ifTrue: { (value) -> Future<Int?> in
             Future(value.lengthOfBytes(using: String.Encoding.utf8))

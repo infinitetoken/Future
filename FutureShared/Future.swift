@@ -82,17 +82,15 @@ public struct Future<T> {
         }
     }
     
-    public func subscribe(alwaysFirst: @escaping () -> Void = {}, success: @escaping (T) -> Void = { _ in }, onError: @escaping (Error) -> Void = { _ in }, alwaysLast: @escaping () -> Void = {}) {
-        alwaysFirst()
-        
+    public func subscribe(_ onComplete: @escaping (T) -> Void = { _ in }, _ onError: @escaping (Error) -> Void = { _ in }, always: @escaping () -> Void = {}) {
         self.next { result in
             switch result {
-            case .success(let value): success(value)
+            case .success(let value): onComplete(value)
             case .failure(let error): onError(error)
             }
         }
         
-        alwaysLast()
+        always()
     }
     
 }
@@ -131,8 +129,8 @@ extension Future {
     public func then<U,V>(condition: Bool, ifTrue: @escaping (T) -> Future<(U?,V?)>, ifFalse: @escaping (T) -> Future<(U?,V?)>) -> Future<(U?,V?)> {
         if condition {
             return Future<(U?,V?)> { completion in
-                self.next { firstFutureResult in
-                    switch firstFutureResult {
+                self.next { result in
+                    switch result {
                     case .success(let value): ifTrue(value).next(completion)
                     case .failure(let error): completion(.failure(error))
                     }
@@ -140,8 +138,8 @@ extension Future {
             }
         } else {
             return Future<(U?,V?)> { completion in
-                self.next { firstFutureResult in
-                    switch firstFutureResult {
+                self.next { result in
+                    switch result {
                     case .success(let value): ifFalse(value).next(completion)
                     case .failure(let error): completion(.failure(error))
                     }
@@ -153,8 +151,8 @@ extension Future {
     public func then<U>(condition: Bool, ifTrue: @escaping (T) -> Future<U?>, ifFalse: @escaping (T) -> Future<U?>) -> Future<U?> {
         if condition {
             return Future<U?> { completion in
-                self.next { firstFutureResult in
-                    switch firstFutureResult {
+                self.next { result in
+                    switch result {
                     case .success(let value): ifTrue(value).next(completion)
                     case .failure(let error): completion(.failure(error))
                     }
@@ -162,8 +160,8 @@ extension Future {
             }
         } else {
             return Future<U?> { completion in
-                self.next { firstFutureResult in
-                    switch firstFutureResult {
+                self.next { result in
+                    switch result {
                     case .success(let value): ifFalse(value).next(completion)
                     case .failure(let error): completion(.failure(error))
                     }
