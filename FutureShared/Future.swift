@@ -112,6 +112,16 @@ public struct Future<T> {
         }
     }
     
+    public func subscribe( _ onError: @escaping (Error) -> Void = { _ in }, always: @escaping () -> Void = {}) {
+        self.next { result in
+            switch result {
+            case .success(_): break
+            case .failure(let error): onError(error)
+            }
+        }
+        always()
+    }
+    
 }
 
 extension Future {
