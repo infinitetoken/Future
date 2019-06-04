@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		F058C28E22A70E40002FCEA1 /* Future.h in Headers */ = {isa = PBXBuildFile; fileRef = F0FBAE472127028700902397 /* Future.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F058C28F22A70E41002FCEA1 /* Future.h in Headers */ = {isa = PBXBuildFile; fileRef = F0FBAE472127028700902397 /* Future.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F058C2C122A71749002FCEA1 /* Future.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FBAE622127030D00902397 /* Future.swift */; };
+		F058C2C222A71754002FCEA1 /* Future.h in Headers */ = {isa = PBXBuildFile; fileRef = F0FBAE472127028700902397 /* Future.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F0FBAE4E2127028700902397 /* Future.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0FBAE442127028700902397 /* Future.framework */; };
 		F0FBAE552127028700902397 /* Future.h in Headers */ = {isa = PBXBuildFile; fileRef = F0FBAE472127028700902397 /* Future.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F0FBAE632127030D00902397 /* Future.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FBAE622127030D00902397 /* Future.swift */; };
@@ -187,6 +189,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F058C2C222A71754002FCEA1 /* Future.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,6 +466,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F058C2C122A71749002FCEA1 /* Future.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,7 +542,7 @@
 		F058C29B22A70E82002FCEA1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -568,7 +572,7 @@
 		F058C29C22A70E82002FCEA1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -724,7 +728,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = RLF8EEWY2Z;
+				DEVELOPMENT_TEAM = 6J8NCZC8G6;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -736,7 +740,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.acwrightdesign.Future;
+				PRODUCT_BUNDLE_IDENTIFIER = com.infinitetoken.Future;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -752,7 +756,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = RLF8EEWY2Z;
+				DEVELOPMENT_TEAM = 6J8NCZC8G6;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -764,7 +768,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.acwrightdesign.Future;
+				PRODUCT_BUNDLE_IDENTIFIER = com.infinitetoken.Future;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -778,7 +782,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = RLF8EEWY2Z;
+				DEVELOPMENT_TEAM = 6J8NCZC8G6;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -799,7 +803,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = RLF8EEWY2Z;
+				DEVELOPMENT_TEAM = 6J8NCZC8G6;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -818,7 +822,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = RLF8EEWY2Z;
+				DEVELOPMENT_TEAM = 6J8NCZC8G6;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -829,7 +833,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.acwrightdesign.FutureMobile;
+				PRODUCT_BUNDLE_IDENTIFIER = com.infinitetoken.FutureMobile;
 				PRODUCT_NAME = Future;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -844,7 +848,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = RLF8EEWY2Z;
+				DEVELOPMENT_TEAM = 6J8NCZC8G6;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -855,7 +859,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.acwrightdesign.FutureMobile;
+				PRODUCT_BUNDLE_IDENTIFIER = com.infinitetoken.FutureMobile;
 				PRODUCT_NAME = Future;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -871,7 +875,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RLF8EEWY2Z;
+				DEVELOPMENT_TEAM = 6J8NCZC8G6;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -892,7 +896,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RLF8EEWY2Z;
+				DEVELOPMENT_TEAM = 6J8NCZC8G6;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -914,7 +918,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = RLF8EEWY2Z;
+				DEVELOPMENT_TEAM = 6J8NCZC8G6;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -925,7 +929,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.acwrightdesign.FutureTV;
+				PRODUCT_BUNDLE_IDENTIFIER = com.infinitetoken.FutureTV;
 				PRODUCT_NAME = Future;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
@@ -940,7 +944,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = RLF8EEWY2Z;
+				DEVELOPMENT_TEAM = 6J8NCZC8G6;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -951,7 +955,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.acwrightdesign.FutureTV;
+				PRODUCT_BUNDLE_IDENTIFIER = com.infinitetoken.FutureTV;
 				PRODUCT_NAME = Future;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
@@ -967,7 +971,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RLF8EEWY2Z;
+				DEVELOPMENT_TEAM = 6J8NCZC8G6;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -989,7 +993,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RLF8EEWY2Z;
+				DEVELOPMENT_TEAM = 6J8NCZC8G6;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
