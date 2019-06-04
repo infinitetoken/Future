@@ -49,7 +49,7 @@
 
 /* Begin PBXFileReference section */
 		F058C28D22A70DAC002FCEA1 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = SOURCE_ROOT; };
-		F058C29522A70E82002FCEA1 /* FutureWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FutureWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F058C29522A70E82002FCEA1 /* Future.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Future.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0D3DE442127064D0078232F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		F0D3DE46212707DB0078232F /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
 		F0FBAE442127028700902397 /* Future.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Future.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -177,7 +177,7 @@
 				F0FBAE712127033400902397 /* FutureMobileTests.xctest */,
 				F0FBAE852127034000902397 /* Future.framework */,
 				F0FBAE8D2127034000902397 /* FutureTVTests.xctest */,
-				F058C29522A70E82002FCEA1 /* FutureWatch.framework */,
+				F058C29522A70E82002FCEA1 /* Future.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -235,7 +235,7 @@
 			);
 			name = FutureWatch;
 			productName = FutureWatch;
-			productReference = F058C29522A70E82002FCEA1 /* FutureWatch.framework */;
+			productReference = F058C29522A70E82002FCEA1 /* Future.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		F0FBAE432127028700902397 /* Future */ = {
@@ -560,7 +560,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.infinitetoken.FutureWatch;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = Future;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -589,7 +589,7 @@
 				);
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.infinitetoken.FutureWatch;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = Future;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
