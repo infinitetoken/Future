@@ -1,23 +1,23 @@
 # Future
 
-![Carthage](https://img.shields.io/badge/Carthage-compatible-brightgreen.svg?style=flat)
+Future is a Swift library for dealing with promises.
 
-### Installation with Carthage
+- [Installation](#installation)
+- [License](#license)
 
-[Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks.
+## Installation
 
-You can install Carthage with [Homebrew](http://brew.sh/) using the following command:
+Future can be installed using the Swift Package Manager. Add the following to your `Package.swift` file:
 
-```bash
-$ brew update
-$ brew install carthage
+```swift
+
+dependencies: [
+    .Package(url: "https://github.com/infinitetoken/Future.git", from: "2.0.0")
+]
+
 ```
 
-To integrate Future into your Xcode project using Carthage, specify it in your `Cartfile`:
+## License
 
-```ogdl
-github "infinitetoken/Future" ~> 1.0
-```
-
-Run `carthage` to build the framework and drag the built `Future.framework` into your Xcode project.
+Future is released under the MIT license. [See LICENSE](https://github.com/infinitetoken/Future/blob/master/LICENSE) for details.
 
